@@ -32,7 +32,7 @@ jobs:
 
       - name: Run Script
         run: |
-          echo hello_world.py
-          python hello_world.py
+          echo hello-world.py
+          python hello-world.py
 
 
