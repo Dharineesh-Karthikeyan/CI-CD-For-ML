@@ -21,4 +21,4 @@ jobs:
         # Write the environment variable whose value is set
         run: |
           echo "Global Variable: ${{ env.GLOBAL_VARIABLE }}"
-          echo "Set job Variable: ${{ env.LOCAL_VARIABLE }}"
+          echo "Set job Variable: ${{ env.JOB_VARIABLE }}"
