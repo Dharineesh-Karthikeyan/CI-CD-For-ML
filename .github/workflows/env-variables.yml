@@ -1,0 +1,24 @@
+name: Testing Environment variables
+
+on:
+  pull_request:
+    # Write the target branch
+    branches: "main"
+
+env:
+  # Set the value of global environment variable
+  GLOBAL_VARIABLE: "GLOBAL"
+
+jobs:
+  # Job block
+  print_env:
+    runs-on: ubuntu-latest
+    env:
+      # Set the value of local environment variable
+      JOB_VARIABLE: "LOCAL"
+    steps:
+      - name: Print Variables
+        # Write the environment variable whose value is set
+        run: |
+          echo "Global Variable: ${{ env.GLOBAL_VARIABLE }}"
+          echo "Set job Variable: ${{ env.LOCAL_VARIABLE }}"
