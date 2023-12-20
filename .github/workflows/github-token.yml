@@ -6,7 +6,7 @@ on:
     branches: main
 
 jobs:
-  print_secrets:
+  pull-comments:
     runs-on: ubuntu-latest
     
     permissions:
